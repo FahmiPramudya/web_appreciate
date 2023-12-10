@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-bottom: 5px solid salmon;
+    background-image: url(https://thebridge.in/h-upload/2021/12/16/20262-viktor-axelsen-source-bwf.webp);
+    filter: opacity(90%);
+    background-position: 0 -100px;
+    height: 600px;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    background-color: rgb(151, 149, 149);
+    border-radius: 0 0 10px 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 5px 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.appre-text{
+    color: white;
+    line-height: 0;
+    font-size: 45px;
+    font-weight: 400;
+    text-indent: 25%;
+}
+
+#about .funfact {
+    margin-bottom: 45px;
+}
+
+.container {
+    width: 75%;
+}
+
+.personal-info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info article{
+    background-color: rgb(232, 240, 237);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.personal-info table tr {
+    text-align: end;
+}
+
+.personal-info table td {
+    text-align: start;
+}
+
+.personal-info img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+#background{
+    display: flex;
+    width: 100%;
+}
+
+.background-detail{
+    width: 50%;
+}
