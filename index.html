@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dummy web</title>
+    <title>Web Appreciation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:opsz@6..12&family=Quicksand&display=swap" rel="stylesheet">
+
 </head>
 <body>
    <header id="header">
-        <div class="appre-text">
-            <h3>Appreciation Web</h3>
-            <p>This is dedicated to a shuttler</p>
-        </div>
         <nav>
             <a href="#header"><img src="assets/shuttlecock.png" alt="Shuttlecock"></a>
             <a href="#about">About</a>
@@ -22,7 +19,12 @@
             <a href="#achievements">Achievements</a>
         </nav>
     </header>
-    
+    <section class="hero">
+        <div class="appre-text">
+            <h3>Appreciation Web</h3>
+            <p>This is dedicated to a shuttler</p>
+        </div>
+    </section>
     <main>
         <div class="container">
             <article id="about">
@@ -49,7 +51,7 @@
                         <article>
                             <h2>Personal Information</h2>
                             <figure>
-                                <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSbONR8NCU-wa38wFqohCcDYgIkYK3YnAOKsciTqom-V80KTcCaZri8_qAwvdd24usd" alt="Viktor Axelsen on Tokyo Olympycs 2020">
+                                <img src="assets/viggo-olympics.png" alt="Viktor Axelsen on Tokyo Olympycs 2020">
                                 <figcaption>Viktor Axelsen Winning 2020 Summer Olympics</figcaption>
                             </figure>
                             
@@ -74,9 +76,49 @@
                         </article>
                     </aside>
             </article>
+
+            <section id="achievements">
+                <h3>Achievements</h3>
+                <button id="btn" onclick="changedisplay()">Show</button>
+                <button id="dbtn" style="display:none" onclick="changedisplay()">Dismiss</button>
+                <div style="display:none" id="show-achievements">
+                    <p>Featuring only the first 1<sup>st</sup> place in tournaments from 2021 to 2023</p>
+                    <ol>2021
+                        <li>YONEX THAILAND OPEN S1000</li>
+                        <li>TOYOTA THAILAND OPEN S1000</li>
+                        <li>YONEX SWISS OPEN S300</li>
+                        <li>TOKYO 2020 OLYMPIC GAMES BADMINTON</li>
+                        <li>VICTOR DENMARK OPEN S1000</li>
+                        <li>SIMINVEST INDONESIA OPEN S1000</li>
+                        <li>HSBC BWF WORLD TOUR FINALS</li>
+                    </ol>
+                    <ol>2022
+                        <li>YONEX ALL ENGLAND OPEN BADMINTON CHAMPIONSHIP S1000</li>
+                        <li>EUROPEAN CHAMPIONSHIPS</li>
+                        <li>DAIHATSU INDONESIA MASTERS S500</li>
+                        <li>EAST VENTURES INDONESIA OPEN S1000</li>
+                        <li>PETRONAS MALAYSIA OPEN S750</li>
+                        <li>TOTALENERGIES BWF WORLD CHAMPIONSHIPS</li>
+                        <li>YONEX FRENCH OPEN S750</li>
+                        <li>HSBC BWF WORLD TOUR FINALS</li>
+                    </ol>
+                    <ol>2023
+                        <li>PETRONAS MALAYSIA OPEN S1000</li>
+                        <li>KAPAL API GROUP INDONESIA OPEN S1000</li>
+                        <li>2023 EUROPEAN GAMES</li>
+                        <li>DAIHATSU JAPAN OPEN S1000</li>
+                        <li>VICTOR CHINA OPEN S1000</li>
+                        <li>KUMAMOTO MASTERS JAPAN S500</li>
+                    </ol>
+                </div>
+
+            </section>
         </div>
     </main>
 
-    <footer></footer>
+    <footer id="footer">
+        <p>Ujian Akhir</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

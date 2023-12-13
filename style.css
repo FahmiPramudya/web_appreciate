@@ -1,72 +1,91 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 
 header{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    border-bottom: 5px solid salmon;
-    background-image: url(https://thebridge.in/h-upload/2021/12/16/20262-viktor-axelsen-source-bwf.webp);
-    filter: opacity(90%);
-    background-position: 0 -100px;
-    height: 600px;
-    background-size: cover;
+    justify-content: center;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 11%;
+    z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    background-color: rgb(151, 149, 149);
+    justify-content: space-around;
+    background-color: #D8D9DA;
     border-radius: 0 0 10px 10px;
 }
 
-nav > a{
+nav a{
     text-decoration: none;
-    color: black;
+    color: #7c7d7e;
     font-weight: 500;
-    font-size: 1.2rem;
-    margin: 5px 0px;
+    font-size: 1.2em;
+    color: #272829;
 }
+
+nav a + a:hover{
+    border-bottom: solid 2px #46C2CB;
+}
+
 
 main {
     display: flex;
     justify-content: center;
 }
 
+article {
+    padding-top: 50px;
+}
+
+.hero{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: linear-gradient(black, black),url(assets/axelsen.png);
+    background-blend-mode: saturation;
+    background-position: center 35%;
+    background-size: cover;
+    height: 350px;
+    border-bottom: 5px solid #46C2CB;
+}
+
 .appre-text{
     color: white;
     line-height: 0;
-    font-size: 45px;
+    font-size: clamp(1rem, 3.4783vw + 0.3043rem, 3rem);
     font-weight: 400;
-    text-indent: 25%;
-}
-
-#about .funfact {
-    margin-bottom: 45px;
 }
 
 .container {
     width: 75%;
 }
 
+#about .funfact {
+    margin-bottom: 45px;
+}
+
 .personal-info{
+    padding-top: 30px;
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .personal-info article{
-    background-color: rgb(232, 240, 237);
+    padding: 0 0 20px 0;
+    background-color: #D8D9DA;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -94,4 +113,71 @@ main {
 
 .background-detail{
     width: 50%;
+}
+
+#achievements{
+    padding: 50px 0;
+}
+
+#achievements button{
+    text-decoration: none;
+    border: solid 2px #46C2CB;
+    background-color: white;
+    padding: 8px 12px;
+    margin: 0 20px 0 0;
+}
+
+#achievements button:hover{
+    cursor: pointer;
+}
+
+#footer{
+    background-color: #D8D9DA;
+    height: 100px;
+    display: flex;
+}
+
+#footer p{
+    margin: auto;
+}
+
+@media screen and (max-width:992px){
+    nav{
+        width: 70%;
+        height: auto;
+    }
+    .personal-info figure{
+        width: 100%;
+        margin: 5px 0 10px auto;
+    }
+}
+
+@media screen and (max-width:764px){
+    nav{
+        width: 100%;
+        height: auto;
+    }
+    nav a{
+        font-size: 1em;
+    }
+    nav a img{
+        width: 70%;
+        height: auto;
+        padding: 5px;
+    }
+    article {
+        padding-top: 50px;
+    }
+    #background {
+        display: inline;
+    }
+    .background-detail {
+        width: 100%;
+    }
+    .personal-info {
+        width: 100%;
+    }
+    .personal-info article {
+        padding: 0 30px 20px 30px;
+    }
 }
